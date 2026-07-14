@@ -31,4 +31,4 @@ sudo ./onboarding/create_user.sh jsmith "John Smith" developers
 - Edit `config/config.example.yaml` → save as `config.yaml`
 
 ## 📁 Project Structure
-
+main

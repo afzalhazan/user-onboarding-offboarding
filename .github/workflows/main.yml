@@ -1,0 +1,14 @@
+name: Test Onboarding Script
+
+on: [push, pull_request]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Run dry-run test
+        run: |
+          chmod +x tests/test_create_user.sh
+          bash tests/test_create_user.sh
